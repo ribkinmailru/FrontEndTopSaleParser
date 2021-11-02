@@ -19,12 +19,10 @@
 <body ng-init="gameActive = true">
   <div class="position-fixed start-50 translate-middle-x" style="z-index: 10;">
     <a class="btn btn-warning m-2" ng-href="#!notebook">Notebooks</a>
-    <a class="btn btn-warning m-2" href="#!tvset">TvSets</a>
-    <a class="btn btn-warning m-2" href="#!phone">Phones</a>
+    <a class="btn btn-warning m-2" ng-href="#!tvset">TvSets</a>
+    <a class="btn btn-warning m-2" ng-href="#!phone">Phones</a>
   </div>
-
-  <canvas id="canvas" style="width: 100wv;" class="position-absolute top-50 start-50 translate-middle" width="1500" height="400"></canvas>
-
+  <canvas ng-show="{{gameActive}}" id="canvas" style="width: 100wv;" class="position-absolute top-50 start-50 translate-middle" width="1500" height="400"></canvas>
   <div ng-view></div>
 
   <script src="game.js" type="text/javascript" defer></script>

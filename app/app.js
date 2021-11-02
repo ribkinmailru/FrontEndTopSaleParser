@@ -22,27 +22,30 @@ myApp.config(function ($routeProvider, $locationProvider) {
 
 
   myApp.controller('notebookController', function DataController($http, $scope){
-    $scope.gameActive = true
+    angular.element(document.querySelector("#canvas")).removeClass("d-none")
+    game = true
     $http.get('http://localhost:8080/notebook').then(function(success){
-      $scope.gameActive = false
-      angular.element(document.querySelector("#canvas")).remove();
+      angular.element(document.querySelector("#canvas")).addClass("d-none")
+      game = false
       $scope.prouducts  = success.data
     })
   })
   myApp.controller('tvsetController', function DataController($http, $scope){
-    $scope.gameActive = true
+    angular.element(document.querySelector("#canvas")).removeClass("d-none")
+    game = true
     $http.get('http://localhost:8080/tvset').then(function(success){
-      $scope.gameActive = false
-      angular.element(document.querySelector("#canvas")).remove();
+      angular.element(document.querySelector("#canvas")).addClass("d-none")
+      game = false
       $scope.prouducts  = success.data
     })
   })
 
   myApp.controller('phoneController', function DataController($http, $scope){
-    $scope.gameActive = true
+    angular.element(document.querySelector("#canvas")).removeClass("d-none")
+    game = true
     $http.get('http://localhost:8080/phone').then(function(success){
-      $scope.gameActive = false
-      angular.element(document.querySelector("#canvas")).remove();
+      angular.element(document.querySelector("#canvas")).addClass("d-none")
+      game = false
       $scope.prouducts  = success.data
     })
   })

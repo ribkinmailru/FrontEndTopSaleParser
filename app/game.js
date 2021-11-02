@@ -83,9 +83,14 @@ document.addEventListener('DOMContentLoaded', function() {
 function checkCollision(obstacle){
     if(obstacle.positionY>canvas.heigth-120-playerPositionY && obstacle.positionY<canvas.heigth-playerPositionY
          && obstacle.positionX<80+40 && obstacle.positionX+obstacle.width-40>80){
-        game = false;
+        gameOver()
     }
 
+}
+
+function gameOver(){
+    score = 0
+    obstacles.splice(0)
 }
 
 

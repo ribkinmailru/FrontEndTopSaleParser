@@ -7,9 +7,9 @@
         <div class="col-8 container ms-md-auto" >
             <div class="position-relative"  style="left: 30px;">
           <p class="row">{{item.title}}</p>
-          <p1 class="row">New price:{{item.currentPrice}}</p1>
-          <p1 class="row">Old price:{{item.oldPrice}}</p1>
-          <p1 class="row">{{item.oldPrice-item.currentPrice}}</p1>
+          <p1 class="row">New price: {{item.currentPrice}}</p1>
+          <p1 class="row">Old price: {{item.oldPrice}}</p1>
+          <p1 class="row">Saving: {{item.oldPrice-item.currentPrice}}</p1>
           <a  class="btn btn-warning row" style="color: white;" ng-href="{{item.productLink}}">Buy</a>
         </div>
          </div>
