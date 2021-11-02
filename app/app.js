@@ -6,15 +6,15 @@ let myApp = angular.module('myApp',[
 myApp.config(function ($routeProvider, $locationProvider) {
   $routeProvider
           .when('/notebook', {
-              templateUrl: 'notebook.html',
+              templateUrl: 'product.html',
               controller: 'notebookController'
           })
           .when('/tvset', {
-            templateUrl: 'notebook.html',
+            templateUrl: 'product.html',
             controller: 'tvsetController'
           })
           .when('/phone', {
-            templateUrl: 'notebook.html',
+            templateUrl: 'product.html',
             controller: 'phoneController'
          }) 
   });

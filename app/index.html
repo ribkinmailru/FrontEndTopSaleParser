@@ -22,8 +22,8 @@
     <a class="btn btn-warning m-2" ng-href="#!tvset">TvSets</a>
     <a class="btn btn-warning m-2" ng-href="#!phone">Phones</a>
   </div>
-  <canvas ng-show="{{gameActive}}" id="canvas" style="width: 100wv;" class="position-absolute top-50 start-50 translate-middle" width="1500" height="400"></canvas>
-  <div ng-view></div>
+  <canvas ng-show="gameActive" id="canvas" style="width: 100wv;" class="position-absolute top-50 start-50 translate-middle" width="1500" height="400"></canvas>
+  <div ng-view style="padding-top: 50px"></div>
 
   <script src="game.js" type="text/javascript" defer></script>
 </body>
