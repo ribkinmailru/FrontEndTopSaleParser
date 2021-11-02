@@ -1,0 +1,17 @@
+<div ng-repeat="item in prouducts" class="p-1 w-75 position-relative top-50 start-50 translate-middle">
+    <div class="container p-3">
+      <div class="row justify-content-md-center">
+        <div class="col-4 position-relative p-2">
+          <img style="width: 10vw; " ng-src="{{item.imgLink}}" class="position-absolute top-50 end-0 translate-middle-y"></img>
+       </div>
+        <div class="col-8 container ms-md-auto" >
+            <div class="position-relative"  style="left: 30px;">
+          <p class="row">{{item.title}}</p>
+          <p1 class="row">New price:{{item.currentPrice}}</p1>
+          <p1 class="row">Old price:{{item.oldPrice}}</p1>
+          <p1 class="row">{{item.oldPrice-item.currentPrice}}</p1>
+          <a  class="btn btn-warning row" style="color: white;" ng-href="{{item.productLink}}">Buy</a>
+        </div>
+         </div>
+    </div>
+    </div>
